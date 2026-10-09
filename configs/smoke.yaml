@@ -1,0 +1,19 @@
+seed: 0
+run_name: smoke
+label: "SMOKE TEST — not a research result"
+output_root: outputs
+env:
+  episode_duration: 4.0
+  n_substeps: 4
+  dt_ctrl: 0.01
+planner:
+  type: quintic
+  duration: 2.0
+residual:
+  type: zero
+disturbance:
+  kind: none
+evaluation:
+  n_episodes: 1
+  split: eval
+  deterministic: true

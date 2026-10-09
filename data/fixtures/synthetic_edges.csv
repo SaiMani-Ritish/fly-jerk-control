@@ -1,0 +1,13 @@
+source_id,target_id,synapse_count,provenance
+syn_00,syn_01,1.0,synthetic fixture — not biological connectome data
+syn_01,syn_02,2.0,synthetic fixture — not biological connectome data
+syn_02,syn_03,3.0,synthetic fixture — not biological connectome data
+syn_03,syn_04,4.0,synthetic fixture — not biological connectome data
+syn_04,syn_05,5.0,synthetic fixture — not biological connectome data
+syn_05,syn_06,6.0,synthetic fixture — not biological connectome data
+syn_06,syn_07,7.0,synthetic fixture — not biological connectome data
+syn_00,syn_03,2.0,synthetic fixture — not biological connectome data
+syn_02,syn_05,2.0,synthetic fixture — not biological connectome data
+syn_05,syn_01,2.0,synthetic fixture — not biological connectome data
+syn_07,syn_04,2.0,synthetic fixture — not biological connectome data
+syn_03,syn_06,2.0,synthetic fixture — not biological connectome data

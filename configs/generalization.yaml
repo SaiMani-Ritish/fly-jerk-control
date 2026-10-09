@@ -1,0 +1,31 @@
+seed: 0
+run_name: generalization
+label: "held-out dynamics split harness — do not tune on test"
+output_root: outputs
+residual:
+  type: mlp
+  hidden_sizes: [32, 32]
+  allow_synthetic: true
+training:
+  total_env_steps: 512
+  n_steps: 128
+  split: train
+evaluation:
+  n_episodes: 3
+  split: test
+scenario_splits:
+  train:
+    mass_values: [1.0]
+    damping_values: [0.5]
+    tau_values: [0.05]
+  val:
+    mass_values: [1.1]
+    damping_values: [0.5]
+    tau_values: [0.05]
+  test:
+    mass_values: [1.3]
+    damping_values: [0.8]
+    tau_values: [0.08]
+disturbance:
+  kind: mass_change
+  mass_values: [1.3]

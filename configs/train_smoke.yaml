@@ -1,0 +1,20 @@
+seed: 0
+run_name: train_smoke
+label: "SMOKE TRAIN — not a research result"
+output_root: outputs
+residual:
+  type: mlp
+  hidden_sizes: [16, 16]
+env:
+  episode_duration: 3.0
+planner:
+  duration: 1.5
+training:
+  total_env_steps: 256
+  n_steps: 64
+  n_epochs: 2
+  minibatch_size: 32
+  split: train
+evaluation:
+  n_episodes: 1
+  split: val

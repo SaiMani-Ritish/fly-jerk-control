@@ -1,0 +1,24 @@
+seed: 0
+run_name: topology_ablation
+label: "matched topology ablation harness — synthetic unless real files provided"
+output_root: outputs
+residual:
+  type: graph
+  allow_synthetic: true
+  graph_nodes: data/fixtures/synthetic_nodes.csv
+  graph_edges: data/fixtures/synthetic_edges.csv
+  init: topology_random
+  alpha: 0.5
+  limit: 8.0
+training:
+  total_env_steps: 512
+  n_steps: 128
+  n_epochs: 2
+  minibatch_size: 64
+  bptt_len: 16
+  split: train
+evaluation:
+  n_episodes: 2
+  split: val
+disturbance:
+  kind: smooth_pulse

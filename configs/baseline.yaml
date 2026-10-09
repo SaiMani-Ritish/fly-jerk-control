@@ -1,0 +1,19 @@
+seed: 0
+run_name: baseline
+label: "baseline zero-residual (not a research result unless fully specified)"
+output_root: outputs
+env:
+  episode_duration: 4.0
+planner:
+  type: quintic
+  duration: 2.0
+residual:
+  type: zero
+disturbance:
+  kind: smooth_pulse
+  pulse_t0: 1.2
+  pulse_duration: 0.4
+  pulse_amplitude: 4.0
+evaluation:
+  n_episodes: 5
+  split: eval
